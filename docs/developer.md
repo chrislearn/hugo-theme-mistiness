@@ -212,7 +212,7 @@ On production environment, these javascript and stylesheets files are concatenat
 |cssmin|Minify `src/assets/cssstyle.css` file in : `src/assets/cssstyle.min.css`|
 |exec|<ul><li>eslint : run `eslint .`</li></ul>|
 |sails-linker|<ul><li>devJs : Link all javascript files listed in `tasks/pipeline.js`  to `layout/partials/script.html`</li><li>devCss : Link all stylesheets files listed in `tasks/pipeline.js`  to `layout/partials/head.html`</li><li>prodJs : Link `src/assets/scripts/script.min.js` file in `layout/partials/script.html`</li><li>prodCss : Link `src/assets/styles/style.min.css` file in `layout/partials/head.html`</li></ul>|
-|sass|Compile `src/scss/mistiness.scss` file in `src/assets/styles/mistiness.css`|
+|sass|Compile `src/styles/mistiness.scss` file in `src/assets/styles/mistiness.css`|
 |sync|Synchronize images from `src/images` to `src/assets/images` and fonts from `src/fonts` to `src/assets/fonts`|
 |watch|Watch assets from `src/*/**/*` folder to detect changes and launch `syncAssets` task|
 

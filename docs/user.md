@@ -505,7 +505,7 @@ Since you are going to edit the theme, you have to install all the necessary to 
 
 ### Change global style
 
-If you want to change font families, font size, sidebar color, things like that, take a look at `source/scss/utils/_variables.scss` file. This file contains global variables used in this theme. **Build the theme after changes to see changes.**
+If you want to change font families, font size, sidebar color, things like that, take a look at `source/styles/utils/_variables.scss` file. This file contains global variables used in this theme. **Build the theme after changes to see changes.**
 
 ### Change code coloration (Highlight.js theme)
 
@@ -515,7 +515,7 @@ Of course, you can replace it with an other theme found on highlight.js reposito
 Follow these steps :
 
 1. Get your theme here : [Highlight.js theme](https://github.com/isagalaev/highlight.js/tree/master/src/styles) or create yours
-2. Follow guidelines in `src/scss/themes/hljs-custom.scss` file
+2. Follow guidelines in `src/styles/themes/hljs-custom.scss` file
 3. Build the theme with `npm run prod` or `grunt buildProd`. Learn more about Grunt tasks : [Grunt tasks](https://github.com/LouisBarranqueiro/hexo-theme-mistiness/blob/master/docs/developer.md#grunt-tasks)
  
 ## Writing posts

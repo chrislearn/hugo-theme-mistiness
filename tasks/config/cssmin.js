@@ -6,9 +6,9 @@ module.exports = function(grunt) {
     prod: {
       files: [{
         expand: true,
-        cwd: 'static/css',
+        cwd: 'static/styles',
         src: ['style.css'],
-        dest: 'static/css',
+        dest: 'static/styles',
         ext: '-' + randToken.generate(60).toLocaleLowerCase() + '.min.css'
       }]
     }

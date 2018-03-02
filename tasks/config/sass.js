@@ -6,7 +6,7 @@ module.exports = function(grunt) {
         sourceMap: false
       },
       files: {
-        'static/styles/mistiness.css': 'src/scss/mistiness.scss'
+        'static/styles/mistiness.css': 'src/styles/mistiness.scss'
       }
     }
   });
