@@ -972,7 +972,7 @@ $green_dark = darken($green, 10)
 
 // mixin/function
 container()
-  max-width 980px
+  max-width 1200px
 
 // mixin/function with parameters
 buttonBG($color = green)
