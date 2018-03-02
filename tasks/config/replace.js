@@ -12,11 +12,11 @@ module.exports = function(grunt) {
         to: '%>'
       }]
     },
-    // Modify url of images and fonts in tranquilpeak.css to resolve images and fonts path.
-    cssTranquilpeak: {
+    // Modify url of images and fonts in mistiness.css to resolve images and fonts path.
+    cssMistiness: {
       overwrite: true,
       src: [
-        'static/css/tranquilpeak.css'
+        'static/styles/mistiness.css'
       ],
       replacements: [{
         from: /url\(\"[.\/]+_images\//,

@@ -7,13 +7,13 @@ metaAlignment: center
 coverMeta: out
 date: 2015-05-13
 categories:
-- tranquilpeak
+- mistiness
 - features
 tags:
 - cover image
 ---
 
-Tranquilpeak integrate a unique "cover image" feature. Open this post to see how this feature sublimate your article.
+Mistiness integrate a unique "cover image" feature. Open this post to see how this feature sublimate your article.
 
 <!--more-->
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget urna vitae velit eleifend interdum at ac nisi. In nec ligula lacus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed eu cursus erat, ut dapibus quam. Aliquam eleifend dolor vitae libero pharetra adipiscing. Etiam adipiscing dolor a quam tempor, eu convallis nulla varius. Aliquam sollicitudin risus a porta aliquam. Ut nec velit dolor. Proin eget leo lobortis, aliquam est sed, mollis mauris. Fusce vitae leo pretium massa accumsan condimentum. Fusce malesuada gravida lectus vel vulputate. Donec bibendum porta nibh ut aliquam.

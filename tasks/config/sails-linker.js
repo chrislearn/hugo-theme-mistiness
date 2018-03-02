@@ -13,7 +13,7 @@ module.exports = function(grunt) {
         appRoot: 'src/'
       },
       files: {
-        'layouts/partials/script.html': pipeline.tranquilpeakJsFilesToInject
+        'layouts/partials/script.html': pipeline.mistinessJsFilesToInject
       }
     },
     devCss: {
@@ -27,7 +27,7 @@ module.exports = function(grunt) {
         appRoot: 'src/'
       },
       files: {
-        'layouts/partials/head.html': pipeline.tranquilpeakCssFilesToInject
+        'layouts/partials/head.html': pipeline.mistinessCssFilesToInject
       }
     },
     prodJs: {
@@ -41,7 +41,7 @@ module.exports = function(grunt) {
         appRoot: 'src/'
       },
       files: {
-        'layouts/partials/script.html': 'static/js/*.min.js'
+        'layouts/partials/script.html': 'static/scripts/*.min.js'
       }
     },
     prodCss: {

@@ -3,7 +3,7 @@ module.exports = function(grunt) {
   grunt.registerTask('buildProd', [
     'clean:build',
     'syncAssets',
-    'replace:cssTranquilpeak',
+    'replace:cssMistiness',
     'concat',
     'cssmin',
     'uglify',

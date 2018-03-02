@@ -1,12 +1,12 @@
 module.exports = function(grunt) {
   grunt.config.set('sass', {
-    // Compile `tranquilpeak.scss` file into `tranquilpeak.css`
+    // Compile `mistiness.scss` file into `mistiness.css`
     dev: {
       options: {
         sourceMap: false
       },
       files: {
-        'static/css/tranquilpeak.css': 'src/scss/tranquilpeak.scss'
+        'static/styles/mistiness.css': 'src/scss/mistiness.scss'
       }
     }
   });

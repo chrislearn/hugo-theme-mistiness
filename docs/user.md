@@ -2,13 +2,13 @@
 
 A gorgeous responsive theme for Hugo blog framework 
 
-[![Tranquilpeak](../showcase.png)](https://tranquilpeak.kakawait.com)
+[![Mistiness](../showcase.png)](https://mistiness.kakawait.com)
 
-Tranquilpeak theme is compatible with Hugo `v0.20`.
+Mistiness theme is compatible with Hugo `v0.20`.
 
-This documentation will help you to install hugo-tranquilpeak-theme and configure it to use all features which it provides.  
+This documentation will help you to install hugo-mistiness-theme and configure it to use all features which it provides.  
 
-If you want to report a bug or ask a question, [create an issue](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/new).
+If you want to report a bug or ask a question, [create an issue](https://github.com/kakawait/hugo-mistiness-theme/issues/new).
 
 ## Summary
 
@@ -17,7 +17,7 @@ If you want to report a bug or ask a question, [create an issue](https://github.
     * [Missing features from original *Hexo* version](#missing-features-from-original-hexo-version)
 - [Requirements](#requirements)
 - [Installation](#installation)
-- [Tranquilpeak configuration](#tranquilpeak-configuration)
+- [Mistiness configuration](#mistiness-configuration)
     - [Language configuration](#language-configuration)
         * [Menu translation](#menu-translation)
     - [Theme configuration](#theme-configuration)
@@ -93,8 +93,8 @@ If you want to report a bug or ask a question, [create an issue](https://github.
 ### Missing features from original *Hexo* version
 
 - [ ] Baidu analytics
-- [ ] Algolia (https://github.com/kakawait/hugo-tranquilpeak-theme/issues/8)
-- [ ] Pagination custumization `tagPagination`, `categoryPagination` and `archivePagination` (https://github.com/kakawait/hugo-tranquilpeak-theme/issues/17)
+- [ ] Algolia (https://github.com/kakawait/hugo-mistiness-theme/issues/8)
+- [ ] Pagination custumization `tagPagination`, `categoryPagination` and `archivePagination` (https://github.com/kakawait/hugo-mistiness-theme/issues/17)
 
 **ATTENTION** following features will not be possible due to *Hugo* limitations
 
@@ -107,16 +107,16 @@ If you want to report a bug or ask a question, [create an issue](https://github.
 
 ## Installation
 
-1. Simply clone the repository `git clone https://github.com/kakawait/hugo-tranquilpeak-theme.git` on `themes` folder
-2. Rename the folder in `hugo-tranquilpeak-theme` (if necessary) and place it in `themes` folder of your Hugo blog
+1. Simply clone the repository `git clone https://github.com/kakawait/hugo-mistiness-theme.git` on `themes` folder
+2. Rename the folder in `hugo-mistiness-theme` (if necessary) and place it in `themes` folder of your Hugo blog
 
 ```shell
 mkdir themes
 cd themes
-git clone https://github.com/kakawait/hugo-tranquilpeak-theme.git
+git clone https://github.com/kakawait/hugo-mistiness-theme.git
 ```
 
-## Tranquilpeak configuration
+## Mistiness configuration
 
 If it's your first time using Hugo, please check [Hugo official documentation](https://gohugo.io/overview/introduction/)
 
@@ -144,8 +144,8 @@ by one of the following code (code is between `()`):
 If your language is not available, follow this guidelines (E.g : add swedish language (`sv-se`)) :  
 
 1. Set `defaultContentLanguage` to `sv-se` in Hugo configuration file `config.{toml,yaml,json}`  
-2. Create `sv-se.yaml` file in `theme/tranquilpeak/i18n/` folder  
-3. Copy the content of `theme/tranquilpeak/i18n/en-us.yaml` and paste it to `sv-se.yml` file  
+2. Create `sv-se.yaml` file in `theme/mistiness/i18n/` folder  
+3. Copy the content of `theme/mistiness/i18n/en-us.yaml` and paste it to `sv-se.yml` file  
 4. Replace all strings in english by their translation in swedish    
 
 #### Menu translation
@@ -154,9 +154,9 @@ Menus are defined using Hugo menus https://gohugo.io/extras/menus/
 
 You can translate menu entries by setting `identifier` that matches a translation key. By using this way, `name` will not be use at all.
 
-### Setting up default theme to Tranquilpeak
+### Setting up default theme to Mistiness
 
-Modify the theme in `config.{toml,yml,json}` by changing `theme` variable to `tranquilpeak`
+Modify the theme in `config.{toml,yml,json}` by changing `theme` variable to `mistiness`
 
 ### Define date format
 
@@ -203,7 +203,7 @@ cp config.{toml,yml,json} config.{toml,yml,json}.backup
 Copy example configuration
 
 ```bash
-cp themes/tranquilpeak/exampleSite/config.toml .
+cp themes/mistiness/exampleSite/config.toml .
 ```
 
 Complete `config.toml` with your information. Read above sections to have more information.
@@ -316,7 +316,7 @@ E.g to display a shortcut to open algolia search window :
   # Your profile picture
   # Overwritten by your gravatar image if `author.gravatarEmail` is filled
   picture = "https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png"
-  # Your Twitter username without the @. E.g : tranquilpeak
+  # Your Twitter username without the @. E.g : mistiness
   twitter = "thibaudlepretre"
   # Your google plus profile id. E.g : +ThibaudLepretre or 114625208755123718311
   googlePlus = "+ThibaudLepretre"
@@ -335,7 +335,7 @@ E.g to display a shortcut to open algolia search window :
 
 #### Customization
 
-**ATTENTION** not all customizations are documented here, you may checkout [sample config.toml](https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/exampleSite/config.toml).
+**ATTENTION** not all customizations are documented here, you may checkout [sample config.toml](https://github.com/kakawait/hugo-mistiness-theme/blob/master/exampleSite/config.toml).
 
 ```toml
 [params]
@@ -361,8 +361,8 @@ E.g to display a shortcut to open algolia search window :
 | favicon | Your favicon path (Default: `/favicon.png`) |
 | imageGallery | Display an image gallery at the end of a post which have `photos` variables. (false: disabled, true: enabled) |
 | hierarchicalCategories | Define categories will create hierarchy between parents: `categories = ["foo", "bar"]` will consider "bar" a sub-category of "foo". If false it will flat categories. |
-| customCSS (_DEPRECATED see [Add custom JS or CSS using configuration](#add-custom-js-or-css-using-configuration)_) | Define files with css that override or extend the theme css: `customCSS` = ["css/mystyles.css"]. |
-| customJS (_DEPRECATED see [Add custom JS or CSS using configuration](#add-custom-js-or-css-using-configuration)_) | Define files with js that override or extend the theme js: `customJS` = ["js/myscripts.js"]. |
+| customCSS (_DEPRECATED see [Add custom JS or CSS using configuration](#add-custom-js-or-css-using-configuration)_) | Define files with css that override or extend the theme css: `customCSS` = ["styles/mystyles.css"]. |
+| customJS (_DEPRECATED see [Add custom JS or CSS using configuration](#add-custom-js-or-css-using-configuration)_) | Define files with js that override or extend the theme js: `customJS` = ["scripts/myscripts.js"]. |
 | syntaxHighlighter | Define which syntax highlighter you want to use (if not set syntax highlighting is disable) between `highlight.js` and `prism.js` |
 
 E.g :  
@@ -393,15 +393,15 @@ If you need to add some additionnal javascript or css files to your blog without
     defer = true
 
   [[params.customJS]]
-    src = "js/myscript.js"
+    src = "scripts/myscript.js"
 
   [[params.customCSS]]
-    href = "css/mystyle.css"
+    href = "styles/mystyle.css"
 ```
 
 **ATTENTION** there is no limitation on key structures and each keys will be converted as tag attributes.
 
-Futhermore, even if previous syntax is still supported (`customJS = ["js/myscripts.js"]`), you can't mix both new and old syntax.
+Futhermore, even if previous syntax is still supported (`customJS = ["scripts/myscripts.js"]`), you can't mix both new and old syntax.
 
 #### Integrated services
 
@@ -467,7 +467,7 @@ You can comment and uncomment to enable or disable sharing options. If your own 
 
 #### Enable pages
 
-Tranquilpeak provides you 2 pages to display all posts title and date by tags, by categories, by date and an about page. To enable one of this pages simply add following [taxonomies](https://gohugo.io/taxonomies/overview/):
+Mistiness provides you 2 pages to display all posts title and date by tags, by categories, by date and an about page. To enable one of this pages simply add following [taxonomies](https://gohugo.io/taxonomies/overview/):
 
 ```toml
 [taxonomies]
@@ -499,9 +499,9 @@ Follow these steps, to add new filter :
 
 ### Prerequisites
 
-Since you are going to edit the theme, you have to install all the necessary to build it after changes : [Installation](https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/developer.md#installation)
+Since you are going to edit the theme, you have to install all the necessary to build it after changes : [Installation](https://github.com/kakawait/hugo-mistiness-theme/blob/master/docs/developer.md#installation)
 
-**Run command in theme folder : `hexo-blog/themes/tranquilpeak`**
+**Run command in theme folder : `hexo-blog/themes/mistiness`**
 
 ### Change global style
 
@@ -509,14 +509,14 @@ If you want to change font families, font size, sidebar color, things like that,
 
 ### Change code coloration (Highlight.js theme)
 
-Tranquilpeak integrate its own highlight.js theme inspired by GitHub. 
+Mistiness integrate its own highlight.js theme inspired by GitHub. 
 Of course, you can replace it with an other theme found on highlight.js repository. Since Hexo use different CSS class names, all theme are not ready out of the box, but it is very easy to make them compatible. 
 
 Follow these steps :
 
 1. Get your theme here : [Highlight.js theme](https://github.com/isagalaev/highlight.js/tree/master/src/styles) or create yours
 2. Follow guidelines in `src/scss/themes/hljs-custom.scss` file
-3. Build the theme with `npm run prod` or `grunt buildProd`. Learn more about Grunt tasks : [Grunt tasks](https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak/blob/master/docs/developer.md#grunt-tasks)
+3. Build the theme with `npm run prod` or `grunt buildProd`. Learn more about Grunt tasks : [Grunt tasks](https://github.com/LouisBarranqueiro/hexo-theme-mistiness/blob/master/docs/developer.md#grunt-tasks)
  
 ## Writing posts
 
@@ -527,7 +527,7 @@ Please note, there are many different versions of Markdown and some of them are 
 
 ### Front-matter settings
 
-Tranquilpeak introduces new variables to give you a lot of possibilities.  
+Mistiness introduces new variables to give you a lot of possibilities.  
   
 Example :  
 ``` markdown
@@ -566,9 +566,9 @@ showDate: true
 |thumbnailImage|Image displayed in index view.|
 |thumbnailImagePosition|Display thumbnail image at the right of title in index pages (`right`, `left` or `bottom`). `thumbnailImagePosition` overwrite the setting `thumbnailImagePosition` in the theme configuration file|
 |metaAlignment|Meta (title, date and categories) alignment (right, left or center). Default behavior : left|
-|coverImage|Image displayed in full size at the top of your post in post view. If thumbnail image is not configured, cover image is also used as thumbnail image. Check the beautiful demo here : [Cover image demo](https://tranquilpeak.kakawait.com/2015/05/cover-image-showcase/)|
+|coverImage|Image displayed in full size at the top of your post in post view. If thumbnail image is not configured, cover image is also used as thumbnail image. Check the beautiful demo here : [Cover image demo](https://mistiness.kakawait.com/2015/05/cover-image-showcase/)|
 |coverSize|`partial`: cover image take a part of the screen height (60%), `full`: cover image take the entire screen height.|
-|coverCaption|Add a caption under the cover image : [Cover caption demo](https://tranquilpeak.kakawait.com/2015/05/cover-image-showcase/)|
+|coverCaption|Add a caption under the cover image : [Cover caption demo](https://mistiness.kakawait.com/2015/05/cover-image-showcase/)|
 |coverMeta|`in`: display post meta (title, date and categories) on cover image, `out`: display meta (title, date and categories) under cover image as usual. Default behavior : `in`|
 |gallery|Images displayed in an image gallery (with fancybox) at the end of the post. If thumbnail image is not configured and cover image too, the first photo is used as thumbnail image. format: `original url [thumbnail url] [caption]`, E.g : `https://example.com/original.jpg https://example.com/thumbnail.jpg "New York"`|
 |comments|`true`: Show the comment of the post.|
@@ -581,13 +581,13 @@ showDate: true
 
 Example: 
 A post on index page will look like this with :`thumbnailImagePosition` set to `bottom`:  
-![thumbnail-image-position-bottom](https://s3-ap-northeast-1.amazonaws.com/tranquilpeak-hexo-theme/docs/1.4.0/TIP-bottom-400.jpg)  
+![thumbnail-image-position-bottom](https://s3-ap-northeast-1.amazonaws.com/mistiness-hexo-theme/docs/1.4.0/TIP-bottom-400.jpg)  
   
 The same with : `thumbnailImagePosition` set to `right`:  
-![thumbnail-image-position-right](https://s3-ap-northeast-1.amazonaws.com/tranquilpeak-hexo-theme/docs/1.4.0/TIP-right-400.png)  
+![thumbnail-image-position-right](https://s3-ap-northeast-1.amazonaws.com/mistiness-hexo-theme/docs/1.4.0/TIP-right-400.png)  
   
 The same with : `thumbnailImagePosition` set to `left`:  
-![thumbnail-image-position-left](https://s3-ap-northeast-1.amazonaws.com/tranquilpeak-hexo-theme/docs/1.4.0/TIP-left-400.png)  
+![thumbnail-image-position-left](https://s3-ap-northeast-1.amazonaws.com/mistiness-hexo-theme/docs/1.4.0/TIP-left-400.png)  
 
 ### Define post excerpt
 
@@ -600,17 +600,17 @@ Use:
 As post excerpt feature enable with `<!--more-->` comment, you can display the table of contents of a post with  `<!-- toc -->`.  Place this comment where you want to display the table of content.
   
 Here is what looks like the table of contents generated:  
-![thumbnail-image-position-left](https://s3-ap-northeast-1.amazonaws.com/tranquilpeak-hexo-theme/docs/1.4.0/toc-400.png) 
+![thumbnail-image-position-left](https://s3-ap-northeast-1.amazonaws.com/mistiness-hexo-theme/docs/1.4.0/toc-400.png) 
   
 ### Tags
 
-Tranquilpeak introduce new tags to display alert messages, images in full width and create beautiful galleries.
+Mistiness introduce new tags to display alert messages, images in full width and create beautiful galleries.
 
 #### Alert
 
-![alert-tag](https://s3-ap-northeast-1.amazonaws.com/tranquilpeak-hexo-theme/docs/1.6/alert-tag.png)
+![alert-tag](https://s3-ap-northeast-1.amazonaws.com/mistiness-hexo-theme/docs/1.6/alert-tag.png)
 
-Alert tag is useful to highlight a content like a tips or a warning. Check it live here : [Alert tag demo](https://tranquilpeak.kakawait.com/2014/10/tags-plugins-showcase/#alert)
+Alert tag is useful to highlight a content like a tips or a warning. Check it live here : [Alert tag demo](https://mistiness.kakawait.com/2014/10/tags-plugins-showcase/#alert)
 
 Syntax:  
 ```
@@ -632,9 +632,9 @@ Here is a danger alert without icon
 
 #### Highlight Text
 
-![highlight_text-tag](https://s3-ap-northeast-1.amazonaws.com/tranquilpeak-hexo-theme/docs/1.6/highlight_text-tag.png)
+![highlight_text-tag](https://s3-ap-northeast-1.amazonaws.com/mistiness-hexo-theme/docs/1.6/highlight_text-tag.png)
 
-Highlight text tag is useful to highlight an interesting part in a text. Check it live here : [Highlight text tag demo](https://tranquilpeak.kakawait.com/2014/10/tags-plugins-showcase/#highlight-text)
+Highlight text tag is useful to highlight an interesting part in a text. Check it live here : [Highlight text tag demo](https://mistiness.kakawait.com/2014/10/tags-plugins-showcase/#highlight-text)
 
 Syntax:  
 ```
@@ -659,7 +659,7 @@ your highlighted text
 
 #### Image
 
-Image tag is useful to add images and create beautiful galleries. Check what are the possibilities here : [Image tag demo](https://tranquilpeak.kakawait.com/2014/10/tags-plugins-showcase/#image)
+Image tag is useful to add images and create beautiful galleries. Check what are the possibilities here : [Image tag demo](https://mistiness.kakawait.com/2014/10/tags-plugins-showcase/#image)
 
 Syntax:
 ```
@@ -673,7 +673,7 @@ E.g:
 
 |Argument|Description|
 |---|---| 
-|classes (optional)|You can add css classes to stylize the image. Separate class with whitespace. Tranquilpeak integrate many css class to create nice effects :  <ul><li><strong>fancybox</strong> : Generate a fancybox image.</li><li><strong>nocaption</strong> : Caption of the image will not be displayed.</li><li><strong>left</strong> : Image will float at the left.</li><li><strong>right</strong> : Image will float at the right.</li><li><strong>center</strong> : Image will be at center.</li><li><strong>fig-20</strong> : Image will take 20% of the width of post width and automatically float at left.</li><li><strong>fig-25</strong> : Image will take 25% of the width of post width and automatically float at left.</li><li><strong>fig-33</strong> : Image will take 33% of the width of post width and automatically float at left.</li><li><strong>fig-50</strong> : Image will take 50% of the width of post width and automatically float at left.</li><li><strong>fig-75</strong> : Image will take 75% of the width of post width and automatically float at left.</li><li><strong>fig-100</strong> : Image will take 100% of the width of post width.</li><li><strong>clear</strong> : Add a div with `clear:both;` style attached after the image to retrieve the normal flow of the post.</li></ul>|
+|classes (optional)|You can add css classes to stylize the image. Separate class with whitespace. Mistiness integrate many css class to create nice effects :  <ul><li><strong>fancybox</strong> : Generate a fancybox image.</li><li><strong>nocaption</strong> : Caption of the image will not be displayed.</li><li><strong>left</strong> : Image will float at the left.</li><li><strong>right</strong> : Image will float at the right.</li><li><strong>center</strong> : Image will be at center.</li><li><strong>fig-20</strong> : Image will take 20% of the width of post width and automatically float at left.</li><li><strong>fig-25</strong> : Image will take 25% of the width of post width and automatically float at left.</li><li><strong>fig-33</strong> : Image will take 33% of the width of post width and automatically float at left.</li><li><strong>fig-50</strong> : Image will take 50% of the width of post width and automatically float at left.</li><li><strong>fig-75</strong> : Image will take 75% of the width of post width and automatically float at left.</li><li><strong>fig-100</strong> : Image will take 100% of the width of post width.</li><li><strong>clear</strong> : Add a div with `clear:both;` style attached after the image to retrieve the normal flow of the post.</li></ul>|
 |group (optional)| Name of a group, used to create a gallery. **Only for image with `fancybox` css class**|
 |src| Path to the original image.|
 |thumbnail (optional)| Path to the thumbnail image. If empty, the orignal image will be displayed.|
@@ -685,9 +685,9 @@ E.g:
 
 Tabbed code blocks are useful to group multiple code blocks related. For example, the source code of a web component (html, css and js). Or compare a source code in different languages.
 
-![tabbed_codeblock-tag](https://s3-ap-northeast-1.amazonaws.com/tranquilpeak-hexo-theme/docs/1.7/tabbed_codeblock-tag.png)
+![tabbed_codeblock-tag](https://s3-ap-northeast-1.amazonaws.com/mistiness-hexo-theme/docs/1.7/tabbed_codeblock-tag.png)
 
-Check it live : [tabbed code block demo](https://tranquilpeak.kakawait.com/2014/10/tags-plugins-showcase/#tabbed-code-block)
+Check it live : [tabbed code block demo](https://mistiness.kakawait.com/2014/10/tags-plugins-showcase/#tabbed-code-block)
 
 Syntax:
 ``` js
@@ -719,7 +719,7 @@ E.g:
 
 #### Wide image
 
-Wide image tag is useful to display wide images in full width. It take the entire window width. Check the the result : [Wide image tag demo](https://tranquilpeak.kakawait.com/2014/10/tags-plugins-showcase/#wide-image)
+Wide image tag is useful to display wide images in full width. It take the entire window width. Check the the result : [Wide image tag demo](https://mistiness.kakawait.com/2014/10/tags-plugins-showcase/#wide-image)
 
 Syntax:
 ```

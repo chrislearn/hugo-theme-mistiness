@@ -1,17 +1,17 @@
 // Js files to inject in `layouts/partials/script.html`
-var tranquilpeakJsFilesToInject = [
-  'tranquilpeak.js'
+var mistinessJsFilesToInject = [
+  'mistiness.js'
 ];
 
 // Css files to inject in `layouts/partials/head.html`
-var tranquilpeakCssFilesToInject = [
-  'tranquilpeak.css'
+var mistinessCssFilesToInject = [
+  'mistiness.css'
 ];
 
-module.exports.tranquilpeakCssFilesToInject = tranquilpeakCssFilesToInject.map(function(path) {
-  return 'static/css/' + path;
+module.exports.mistinessCssFilesToInject = mistinessCssFilesToInject.map(function(path) {
+  return 'static/styles/' + path;
 });
 
-module.exports.tranquilpeakJsFilesToInject = tranquilpeakJsFilesToInject.map(function(path) {
-  return 'static/js/' + path;
+module.exports.mistinessJsFilesToInject = mistinessJsFilesToInject.map(function(path) {
+  return 'static/scripts/' + path;
 });

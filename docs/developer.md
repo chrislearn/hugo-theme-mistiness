@@ -1,8 +1,8 @@
 # Developer documentation #
 
-This documentation will help you to understand Tranquilpeak Hugo theme code.  
+This documentation will help you to understand Mistiness Hugo theme code.  
 
-If you want to report a bug or ask a question, [create an issue](https://github.com/kakawait/hugo-tranquilpeak-theme/issues/new).
+If you want to report a bug or ask a question, [create an issue](https://github.com/kakawait/hugo-mistiness-theme/issues/new).
 
 ## Summary ##
 
@@ -38,14 +38,14 @@ If you want to report a bug or ask a question, [create an issue](https://github.
 
 ## Installation ##
 
-1. Run `git clone https://github.com/kakawait/hugo-tranquilpeak-theme.git`
-2. Rename the folder in `tranquilpeak` and place it in `themes` folder of your Hexo blog
-3. Modify the hugo config in `config.toml` by changing `theme` variable  to `tranquilpeak`
-4. Go in `theme/tranquilpeak` folder with `cd themes/tranquilpeak`
+1. Run `git clone https://github.com/kakawait/hugo-mistiness-theme.git`
+2. Rename the folder in `mistiness` and place it in `themes` folder of your Hexo blog
+3. Modify the hugo config in `config.toml` by changing `theme` variable  to `mistiness`
+4. Go in `theme/mistiness` folder with `cd themes/mistiness`
 5. Install [requirements](#requirements)
 6. Run `npm install` to install [NPM dependencies](#npm-dependencies)
 
-If you want to configure the theme, please follow the [user documentation](https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/user.md)  
+If you want to configure the theme, please follow the [user documentation](https://github.com/kakawait/hugo-mistiness-theme/blob/master/docs/user.md)  
 
 ## Code style ##
 
@@ -60,7 +60,7 @@ grunt eslint
 ## Code structure ##
 
 ```
-tranquilpeak
+mistiness
 ├── docs
 ├── layout
 ├── src
@@ -182,24 +182,24 @@ Use `npm run <script_name>` to run one of these scripts. E.g : `npm run start`
 
 ``` javascript
 // Js files to inject in `layout/partials/script.html`
-var tranquilpeakJsFilesToInject = [
+var mistinessJsFilesToInject = [
     'jquery.js',
     'jquery.fancybox.js',
     'jquery.fancybox-thumbs.js',
-    'tranquilpeak.js'
+    'mistiness.js'
 ];
 // Css files to inject in `layout/partials/head.html`
-var tranquilpeakCssFilesToInject = [
+var mistinessCssFilesToInject = [
     'font-awesome.css',
     'jquery.fancybox.css',
     'jquery.fancybox-thumbs.css',
-    'tranquilpeak.css'
+    'mistiness.css'
 ];
 ```
 |Variable|Description|
 |---|---|
-|tranquilpeakJsFilesToInject|Files injected in `layout/partials/script.html` (developement environment)|
-|tranquilpeakCssFilesToInject|Files injected in`layout/partials/head.html` (developement environment)|
+|mistinessJsFilesToInject|Files injected in `layout/partials/script.html` (developement environment)|
+|mistinessCssFilesToInject|Files injected in`layout/partials/head.html` (developement environment)|
 
 On production environment, these javascript and stylesheets files are concatenate and minify in 1 javascript file and 1 stylesheet file and linked to their respective views
 
@@ -208,11 +208,11 @@ On production environment, these javascript and stylesheets files are concatenat
 |Task|Description|
 |---|---|
 |clean|Delete `src/assets` folder|
-|concat|<ul><li>devJs : Concat all javascript files located in `src/js/` into 1 file : `src/assets/js/tranquilpeak.js`</li><li>prodCss : Concat all stylesheets files located in `src/assets/css/` into 1 file : `src/assets/css/style.css`</li><li>prodJs : Concat all javascript listed in `tasks/pipeline.js` in 1 file : `src/assets/js/script.js`</li></ul>|
+|concat|<ul><li>devJs : Concat all javascript files located in `src/scripts/` into 1 file : `src/assets/scripts/mistiness.js`</li><li>prodCss : Concat all stylesheets files located in `src/assets/styles/` into 1 file : `src/assets/styles/style.css`</li><li>prodJs : Concat all javascript listed in `tasks/pipeline.js` in 1 file : `src/assets/scripts/script.js`</li></ul>|
 |cssmin|Minify `src/assets/cssstyle.css` file in : `src/assets/cssstyle.min.css`|
 |exec|<ul><li>eslint : run `eslint .`</li></ul>|
-|sails-linker|<ul><li>devJs : Link all javascript files listed in `tasks/pipeline.js`  to `layout/partials/script.html`</li><li>devCss : Link all stylesheets files listed in `tasks/pipeline.js`  to `layout/partials/head.html`</li><li>prodJs : Link `src/assets/js/script.min.js` file in `layout/partials/script.html`</li><li>prodCss : Link `src/assets/js/style.min.css` file in `layout/partials/head.html`</li></ul>|
-|sass|Compile `src/scss/tranquilpeak.scss` file in `src/assets/css/tranquilpeak.css`|
+|sails-linker|<ul><li>devJs : Link all javascript files listed in `tasks/pipeline.js`  to `layout/partials/script.html`</li><li>devCss : Link all stylesheets files listed in `tasks/pipeline.js`  to `layout/partials/head.html`</li><li>prodJs : Link `src/assets/scripts/script.min.js` file in `layout/partials/script.html`</li><li>prodCss : Link `src/assets/styles/style.min.css` file in `layout/partials/head.html`</li></ul>|
+|sass|Compile `src/scss/mistiness.scss` file in `src/assets/styles/mistiness.css`|
 |sync|Synchronize images from `src/images` to `src/assets/images` and fonts from `src/fonts` to `src/assets/fonts`|
 |watch|Watch assets from `src/*/**/*` folder to detect changes and launch `syncAssets` task|
 

@@ -1,22 +1,22 @@
 module.exports = function(grunt) {
   grunt.config.set('concat', {
-    // Concat all javascript file into `tranquilpeak.js`
+    // Concat all javascript file into `mistiness.js`
     devJs: {
-      src: ['src/js/**/*.js'],
-      dest: 'static/js/tranquilpeak.js',
+      src: ['src/scripts/**/*.js'],
+      dest: 'static/scripts/mistiness.js',
       options: {
         separator: ';'
       }
     },
     // Concat all stylesheets file into `style.css`
     prodCss: {
-      src: ['static/css/*.css'],
-      dest: 'static/css/style.css'
+      src: ['static/styles/*.css'],
+      dest: 'static/styles/style.css'
     },
     // Concat all javascript file in `script.js`
     prodJs: {
-      src: require('../pipeline').tranquilpeakJsFilesToInject,
-      dest: 'static/js/script.js',
+      src: require('../pipeline').mistinessJsFilesToInject,
+      dest: 'static/scripts/script.js',
       options: {
         separator: ';'
       }
