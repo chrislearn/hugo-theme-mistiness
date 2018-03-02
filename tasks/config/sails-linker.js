@@ -55,7 +55,7 @@ module.exports = function(grunt) {
         appRoot: 'src/'
       },
       files: {
-        'layouts/partials/head.html': 'static/css/*.min.css'
+        'layouts/partials/head.html': 'static/styles/*.min.css'
       }
     }
   });
