@@ -11,7 +11,11 @@
           <form id="filter-form" action="#">
             <input name="date" type="text" class="form-control input--xlarge" placeholder="{{ i18n "global.search_date" }}" autofocus="autofocus">
           </form>
-          {{ partial "archive-post.html" (where .Site.RegularPages "Type" "posts") }}
+          {{ $posts := where .Site.RegularPages "Section" "posts" }}
+          {{ if eq (len $posts) 0 }}
+            {{ $posts = where .Site.RegularPages "Section" "post" }}
+          {{ end }}
+          {{ partial "archive-post.html" $posts }}
         </div>
       </div>
     </div>
